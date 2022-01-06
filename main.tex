@@ -1,0 +1,72 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.25in]{geometry}
+\usepackage{graphicx}
+\usepackage[bottom]{footmisc}
+\usepackage[unnumberedbib,notocbib]{apacite}
+\usepackage{authblk}
+\usepackage{amsmath}
+
+% possessive reference
+\newcommand\citeApos[1]{\citeauthor{#1}'s (\citeyearNP{#1})}
+
+% footer to indicate publication status
+% \usepackage{fancyhdr} \pagestyle{fancy} \renewcommand{\headrulewidth}{0pt}
+% \lhead{} \rhead{} \cfoot{\tiny This is the author's version of the work.}
+
+% local bibliography
+% \begin{filecontents}{localbib.bib}
+% \end{filecontents}
+
+\begin{document}
+
+\title{}
+\date{}
+
+\author[1,*]{Laurens R. Krol}
+\author[2]{Thorsten O. Zander}
+\affil[1]{Neuroadaptive Human-Computer Interaction, Brandenburg University of Technology, Cottbus-Senftenberg, Germany}
+\affil[2]{Zander Laboratories B.V., Amsterdam, The Netherlands} 
+\affil[*]{Correspondence: \texttt{lrkrol@gmail.com}}
+
+
+\maketitle
+% \thispagestyle{fancy}
+
+\begin{abstract}
+
+\end{abstract}
+
+
+\section{Introduction}
+
+A brain-computer interface (BCI) is a neurotechnological system that allows human mental states to be directly accessed by a computer. To that end, the BCI system reads human brain activity, most commonly using electroencephalography (EEG), applies a number of signal processing and feature extraction steps, and employs machine learning algorithms in order to classify the resulting features as being indicative of certain mental states. This was first demonstrated in the 1970s \cite{vidal1977realtimedetect} has been under continuous development ever since, primarily in medical contexts. Here, BCI systems are envisioned to, for example, enable paralysed or otherwise motor-impaired patients to regain independence by replacing natural neural pathways with BCIs \cite{wolpaw2002commcontrol}. However, more than that can be done with technology that has direct access to human mental states. \citeA{zander2011passive} in particular introduced the concept of \emph{passive} BCIs, where technology uses arbitrary, naturally occurring mental states as input, as opposed to those \emph{active} BCIs that are intended for direct communication and control \cite{krol2018interactivity}. This latter category simply replaces existing means of control with a BCI. The former, however, enables new forms of \emph{implicit} human-computer interaction, through which technology can automatically adapt to its human user, without this user actively communicating anything, or even being aware of any communication taking place \cite{krol2022definingnat}.
+
+
+% \begin{figure}[h]
+%     \centering
+%     \label{fig:label}
+%     \includegraphics[width=\textwidth]{figs/erpimages.png}
+%     \caption{Caption}
+% \end{figure}
+
+% \begin{table}
+%     \centering
+%     \label{tab:label}
+%     \begin{tabular}{ccc}
+%         1 & 2 & 3 \\
+%     \end{tabular}
+%     \caption{Caption}
+% \end{table}
+
+
+
+% \section*{Acknowledgements}
+
+% Part of this work was supported by the Deutsche Forschungsgemeinschaft (ZA 821/3-1). 
+
+
+\bibliographystyle{apacite} 
+\bibliography{bibliography}
+\end{document}
