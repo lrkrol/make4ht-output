@@ -9,7 +9,7 @@ jobs:
      uses: docker://ghcr.io/michal-h21/make4ht-action:latest 
      env: 
        command: "make4ht -u -d out main.tex" 
-       extra_packages: "True"
+       extra_packages: "texlive-bibtex-extra"
    - name: Publish the web pages 
      uses:  peaceiris/actions-gh-pages@v3 
      with: 
